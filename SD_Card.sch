@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+LIBS:BPS6001 Classic Computing Shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr User 16774 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8300 3200 7800 3200
+Wire Wire Line
+	8300 3100 7800 3100
+Wire Wire Line
+	7800 3200 7800 3100
+Wire Wire Line
+	8300 2900 7800 2900
+Wire Wire Line
+	7800 3100 7800 2900
+Text GLabel 8300 3200 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	8300 2800 7800 2800
+Text GLabel 8300 2800 0    10   BiDi ~ 0
+3V3_PWR6
+Wire Wire Line
+	7000 1500 7300 1500
+Wire Wire Line
+	7300 1500 7300 1400
+Wire Wire Line
+	7600 1500 7300 1500
+Connection ~ 7300 1500
+Text GLabel 7000 1500 0    10   BiDi ~ 0
+3V3_PWR6
+Wire Wire Line
+	8300 2100 7000 2100
+Wire Wire Line
+	7000 1900 7000 2100
+Text GLabel 7800 2100 2    70   BiDi ~ 0
+SD_MISO
+Connection ~ 7000 2100
+Wire Wire Line
+	8300 2200 7300 2200
+Wire Wire Line
+	7300 2200 7000 2200
+Wire Wire Line
+	7300 1900 7300 2200
+Text GLabel 7800 2200 2    70   BiDi ~ 0
+SD_MOSI
+Connection ~ 7300 2200
+Wire Wire Line
+	8300 2300 7000 2300
+Text GLabel 7800 2300 2    70   BiDi ~ 0
+SD_SCK
+Wire Wire Line
+	8300 2400 7600 2400
+Wire Wire Line
+	7600 2400 7000 2400
+Wire Wire Line
+	7600 1900 7600 2400
+Text GLabel 7800 2400 2    70   BiDi ~ 0
+SD_~CS
+Connection ~ 7600 2400
+Wire Wire Line
+	8300 1700 7800 1700
+Text GLabel 7800 1700 2    70   BiDi ~ 0
+SD_CD
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:MICROSD SD1
+U 1 1 712FD905
+P 9000 2400
+AR Path="/712FD905" Ref="SD1"  Part="1" 
+AR Path="/5D3B680C/712FD905" Ref="SD1"  Part="1" 
+F 0 "SD1" H 9000 2400 50  0001 C CNN
+F 1 "MICROSD" H 9000 2400 50  0001 C CNN
+F 2 "BPS6001 Classic Computing Shield:MICROSD" H 9000 2400 50  0001 C CNN
+F 3 "" H 9000 2400 50  0001 C CNN
+F 4 "101-00660-68-6" H 9000 2400 50  0001 L BNN "PARTNO"
+	1    9000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:GND #GND17
+U 1 1 0A5A0AC8
+P 7800 3300
+AR Path="/0A5A0AC8" Ref="#GND17"  Part="1" 
+AR Path="/5D3B680C/0A5A0AC8" Ref="#GND017"  Part="1" 
+F 0 "#GND017" H 7800 3300 50  0001 C CNN
+F 1 "GND" H 7710 3220 59  0000 L BNN
+F 2 "" H 7800 3300 50  0001 C CNN
+F 3 "" H 7800 3300 50  0001 C CNN
+	1    7800 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR9
+U 1 1 75EEDDE3
+P 7800 2700
+AR Path="/75EEDDE3" Ref="#3V3_PWR9"  Part="1" 
+AR Path="/5D3B680C/75EEDDE3" Ref="#3V3_PWR09"  Part="1" 
+F 0 "#3V3_PWR09" H 7800 2700 50  0001 C CNN
+F 1 "3V3" H 7730 2825 46  0000 L BNN
+F 2 "" H 7800 2700 50  0001 C CNN
+F 3 "" H 7800 2700 50  0001 C CNN
+	1    7800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:A3L-LOC #FRAME2
+U 1 1 DFE0E5A0
+P 900 7300
+AR Path="/DFE0E5A0" Ref="#FRAME2"  Part="1" 
+AR Path="/5D3B680C/DFE0E5A0" Ref="#FRAME2"  Part="1" 
+F 0 "#FRAME2" H 900 7300 50  0001 C CNN
+F 1 "A3L-LOC" H 900 7300 50  0001 C CNN
+F 2 "" H 900 7300 50  0001 C CNN
+F 3 "" H 900 7300 50  0001 C CNN
+	1    900  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R23
+U 1 1 CA0A7A29
+P 7000 1700
+AR Path="/CA0A7A29" Ref="R23"  Part="1" 
+AR Path="/5D3B680C/CA0A7A29" Ref="R23"  Part="1" 
+F 0 "R23" H 6900 1760 50  0001 L BNN
+F 1 "47K" H 6900 1590 50  0001 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 7000 1700 50  0001 C CNN
+F 3 "" H 7000 1700 50  0001 C CNN
+F 4 "RMCF0603JT47K0" V 7000 1700 50  0001 R TNN "PARTNO"
+	1    7000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R24
+U 1 1 7C2DAC4F
+P 7300 1700
+AR Path="/7C2DAC4F" Ref="R24"  Part="1" 
+AR Path="/5D3B680C/7C2DAC4F" Ref="R24"  Part="1" 
+F 0 "R24" H 7200 1760 50  0001 L BNN
+F 1 "47K" H 7200 1590 50  0001 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 7300 1700 50  0001 C CNN
+F 3 "" H 7300 1700 50  0001 C CNN
+F 4 "RMCF0603JT47K0" V 7300 1700 50  0001 R TNN "PARTNO"
+	1    7300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R25
+U 1 1 BA5937AF
+P 7600 1700
+AR Path="/BA5937AF" Ref="R25"  Part="1" 
+AR Path="/5D3B680C/BA5937AF" Ref="R25"  Part="1" 
+F 0 "R25" H 7500 1760 50  0001 L BNN
+F 1 "47K" H 7500 1590 50  0001 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 7600 1700 50  0001 C CNN
+F 3 "" H 7600 1700 50  0001 C CNN
+F 4 "RMCF0603JT47K0" V 7600 1700 50  0001 R TNN "PARTNO"
+	1    7600 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR10
+U 1 1 2769ED39
+P 7300 1300
+AR Path="/2769ED39" Ref="#3V3_PWR10"  Part="1" 
+AR Path="/5D3B680C/2769ED39" Ref="#3V3_PWR010"  Part="1" 
+F 0 "#3V3_PWR010" H 7300 1300 50  0001 C CNN
+F 1 "3V3" H 7230 1425 46  0000 L BNN
+F 2 "" H 7300 1300 50  0001 C CNN
+F 3 "" H 7300 1300 50  0001 C CNN
+	1    7300 1300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6800 3600 6800 800 
+Wire Notes Line
+	6800 800  9700 800 
+Wire Notes Line
+	9700 800  9700 3600
+Wire Notes Line
+	9700 3600 6800 3600
+Text Notes 7600 1200 0    170  ~ 0
+uSD Card
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name BPS6001_Classic_Computing_Shield-eagle-import)(type Legacy)(uri ${KIPRJMOD}/BPS6001_Classic_Computing_Shield-eagle-import.lib)(options "")(descr ""))
+)

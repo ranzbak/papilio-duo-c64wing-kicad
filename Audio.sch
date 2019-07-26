@@ -1,0 +1,205 @@
+EESchema Schematic File Version 4
+LIBS:BPS6001 Classic Computing Shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr User 12505 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7200 2800 7200 2500
+Wire Wire Line
+	7200 2500 7200 1700
+Wire Wire Line
+	7200 1700 7200 1550
+Wire Wire Line
+	7200 1550 7600 1550
+Wire Wire Line
+	9100 2800 9100 2500
+Wire Wire Line
+	9100 2500 9100 2000
+Wire Wire Line
+	9100 2000 9100 1950
+Wire Wire Line
+	9100 1950 8400 1950
+Wire Wire Line
+	7200 3200 7200 3600
+Text GLabel 7200 3300 1    70   BiDi ~ 0
+AUDIO2-LEFT
+Wire Wire Line
+	9100 3200 9100 3600
+Text GLabel 9100 3300 1    70   BiDi ~ 0
+AUDIO2-RIGHT
+Wire Wire Line
+	6900 2500 7000 2500
+Text GLabel 6900 2500 0    10   BiDi ~ 0
+JOY_GND
+Wire Wire Line
+	7600 2410 7600 2250
+Text GLabel 7600 2410 0    10   BiDi ~ 0
+JOY_GND
+Wire Wire Line
+	8800 2500 8900 2500
+Text GLabel 8800 2500 0    10   BiDi ~ 0
+JOY_GND
+Wire Wire Line
+	8400 2440 8400 2150
+Text GLabel 8400 2440 0    10   BiDi ~ 0
+JOY_GND
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:FRAME_A_L #FRAME4
+U 1 1 B9984423
+P 900 6900
+AR Path="/B9984423" Ref="#FRAME4"  Part="1" 
+AR Path="/5D3B6A4D/B9984423" Ref="#FRAME4"  Part="1" 
+F 0 "#FRAME4" H 900 6900 50  0001 C CNN
+F 1 "FRAME_A_L" H 900 6900 50  0001 C CNN
+F 2 "" H 900 6900 50  0001 C CNN
+F 3 "" H 900 6900 50  0001 C CNN
+	1    900  6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:FRAME_A_L #FRAME4
+U 2 1 B998442F
+P 7700 6900
+AR Path="/B998442F" Ref="#FRAME4"  Part="2" 
+AR Path="/5D3B6A4D/B998442F" Ref="#FRAME4"  Part="2" 
+F 0 "#FRAME4" H 7700 6900 50  0001 C CNN
+F 1 "FRAME_A_L" H 7700 6900 50  0001 C CNN
+F 2 "" H 7700 6900 50  0001 C CNN
+F 3 "" H 7700 6900 50  0001 C CNN
+	2    7700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:AUDIO-CONNECTOR-6P-SMD-3440030P1 AJ2
+U 1 1 ED9E61F0
+P 8000 1800
+AR Path="/ED9E61F0" Ref="AJ2"  Part="1" 
+AR Path="/5D3B6A4D/ED9E61F0" Ref="AJ2"  Part="1" 
+F 0 "AJ2" H 7450 2000 42  0000 L BNN
+F 1 "AUDIO-CONNECTOR-6P-SMD-3440030P1" H 7700 2000 42  0000 L BNN
+F 2 "BPS6001 Classic Computing Shield:6P-SMD-3.5" H 8000 1800 50  0001 C CNN
+F 3 "" H 8000 1800 50  0001 C CNN
+F 4 "3440030P1" V 8000 1800 42  0001 L BNN "PARTNO"
+	1    8000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:C0603 C8
+U 1 1 4DB47F9E
+P 7100 2500
+AR Path="/4DB47F9E" Ref="C8"  Part="1" 
+AR Path="/5D3B6A4D/4DB47F9E" Ref="C8"  Part="1" 
+F 0 "C8" H 7200 2415 50  0000 L BNN
+F 1 "4700pF" H 7160 2315 50  0000 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 7100 2500 50  0001 C CNN
+F 3 "" H 7100 2500 50  0001 C CNN
+F 4 "C0603C472J5RACTU" H 7100 2500 50  0001 R TNN "PARTNO"
+	1    7100 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:GND #SUPPLY2
+U 1 1 33EFDB7C
+P 6800 2500
+AR Path="/33EFDB7C" Ref="#SUPPLY2"  Part="1" 
+AR Path="/5D3B6A4D/33EFDB7C" Ref="#SUPPLY02"  Part="1" 
+F 0 "#SUPPLY02" H 6800 2500 50  0001 C CNN
+F 1 "GND" H 6725 2375 59  0000 L BNN
+F 2 "" H 6800 2500 50  0001 C CNN
+F 3 "" H 6800 2500 50  0001 C CNN
+	1    6800 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R45
+U 1 1 1578EE70
+P 7200 3000
+AR Path="/1578EE70" Ref="R45"  Part="1" 
+AR Path="/5D3B6A4D/1578EE70" Ref="R45"  Part="1" 
+F 0 "R45" H 7100 3060 50  0001 L BNN
+F 1 "3.3K" H 7050 2870 50  0001 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 7200 3000 50  0001 C CNN
+F 3 "" H 7200 3000 50  0001 C CNN
+F 4 "RMCF0603JT3K30" V 7200 3000 50  0001 L BNN "PARTNO"
+	1    7200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:C0603 C9
+U 1 1 08432C4A
+P 9000 2500
+AR Path="/08432C4A" Ref="C9"  Part="1" 
+AR Path="/5D3B6A4D/08432C4A" Ref="C9"  Part="1" 
+F 0 "C9" H 9100 2415 50  0000 L BNN
+F 1 "4700pF" H 9060 2315 50  0000 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 9000 2500 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+F 4 "C0603C472J5RACTU" H 9000 2500 50  0001 R TNN "PARTNO"
+	1    9000 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:GND #SUPPLY3
+U 1 1 D5692080
+P 8700 2500
+AR Path="/D5692080" Ref="#SUPPLY3"  Part="1" 
+AR Path="/5D3B6A4D/D5692080" Ref="#SUPPLY03"  Part="1" 
+F 0 "#SUPPLY03" H 8700 2500 50  0001 C CNN
+F 1 "GND" H 8625 2375 59  0000 L BNN
+F 2 "" H 8700 2500 50  0001 C CNN
+F 3 "" H 8700 2500 50  0001 C CNN
+	1    8700 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R46
+U 1 1 22B5FD78
+P 9100 3000
+AR Path="/22B5FD78" Ref="R46"  Part="1" 
+AR Path="/5D3B6A4D/22B5FD78" Ref="R46"  Part="1" 
+F 0 "R46" H 9000 3060 50  0001 L BNN
+F 1 "3.3K" H 8950 2870 50  0001 L BNN
+F 2 "BPS6001 Classic Computing Shield:0603" H 9100 3000 50  0001 C CNN
+F 3 "" H 9100 3000 50  0001 C CNN
+F 4 "RMCF0603JT3K30" V 9100 3000 50  0001 L BNN "PARTNO"
+	1    9100 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:GND #SUPPLY4
+U 1 1 6DF68C43
+P 7600 2510
+AR Path="/6DF68C43" Ref="#SUPPLY4"  Part="1" 
+AR Path="/5D3B6A4D/6DF68C43" Ref="#SUPPLY04"  Part="1" 
+F 0 "#SUPPLY04" H 7600 2510 50  0001 C CNN
+F 1 "GND" H 7525 2385 59  0000 L BNN
+F 2 "" H 7600 2510 50  0001 C CNN
+F 3 "" H 7600 2510 50  0001 C CNN
+	1    7600 2510
+	1    0    0    -1  
+$EndComp
+$Comp
+L BPS6001_Classic_Computing_Shield-eagle-import:GND #SUPPLY5
+U 1 1 FD320F9F
+P 8400 2540
+AR Path="/FD320F9F" Ref="#SUPPLY5"  Part="1" 
+AR Path="/5D3B6A4D/FD320F9F" Ref="#SUPPLY05"  Part="1" 
+F 0 "#SUPPLY05" H 8400 2540 50  0001 C CNN
+F 1 "GND" H 8325 2415 59  0000 L BNN
+F 2 "" H 8400 2540 50  0001 C CNN
+F 3 "" H 8400 2540 50  0001 C CNN
+	1    8400 2540
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
