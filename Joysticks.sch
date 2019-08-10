@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 16774 9150
 encoding utf-8
-Sheet 1 8
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -208,24 +208,17 @@ Wire Wire Line
 Wire Wire Line
 	7800 3000 7900 3000
 Wire Wire Line
-	7900 3000 7950 3000
-Wire Wire Line
-	7950 3000 8000 3000
-Wire Wire Line
 	8000 3000 8100 3000
 Wire Wire Line
 	8100 3000 8200 3000
 Wire Wire Line
 	8200 3000 8300 3000
-Connection ~ 7600 3000
 Connection ~ 7700 3000
 Connection ~ 7800 3000
 Connection ~ 7900 3000
-Connection ~ 7950 3000
 Connection ~ 8000 3000
 Connection ~ 8100 3000
 Connection ~ 8200 3000
-Connection ~ 8300 3000
 Text GLabel 7600 3000 0    10   BiDi ~ 0
 JOY_3V3
 Wire Wire Line
@@ -243,24 +236,17 @@ Wire Wire Line
 Wire Wire Line
 	7800 1000 7900 1000
 Wire Wire Line
-	7900 1000 7950 1000
-Wire Wire Line
-	7950 1000 8000 1000
-Wire Wire Line
 	8000 1000 8100 1000
 Wire Wire Line
 	8100 1000 8200 1000
 Wire Wire Line
 	8200 1000 8300 1000
-Connection ~ 7600 1000
 Connection ~ 7700 1000
 Connection ~ 7800 1000
 Connection ~ 7900 1000
-Connection ~ 7950 1000
 Connection ~ 8000 1000
 Connection ~ 8100 1000
 Connection ~ 8200 1000
-Connection ~ 8300 1000
 Text GLabel 7600 1000 0    10   BiDi ~ 0
 3V3_PWR6
 $Comp
@@ -588,4 +574,8 @@ Text Notes 12600 7100 0    73   ~ 0
 Copyright 2010-2012 Gadget Factory, LLC
 Text Notes 12350 7250 0    59   ~ 0
 See more details at www.GadgetFactory.net
+Wire Wire Line
+	7900 3000 8000 3000
+Wire Wire Line
+	7900 1000 8000 1000
 $EndSCHEMATC

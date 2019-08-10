@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 16774 8268
 encoding utf-8
-Sheet 1 8
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -45,7 +45,6 @@ Wire Wire Line
 	7000 1900 7000 2100
 Text GLabel 7800 2100 2    70   BiDi ~ 0
 SD_MISO
-Connection ~ 7000 2100
 Wire Wire Line
 	8300 2200 7300 2200
 Wire Wire Line

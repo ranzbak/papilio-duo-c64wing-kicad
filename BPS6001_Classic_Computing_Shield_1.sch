@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 16774 9249
 encoding utf-8
-Sheet 1 8
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -14,12 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Bus Line
-	8700 2700 8700 4200
 Text Label 8800 2700 0    10   ~ 0
 AUDIO-,AUDIO+,BLUE[1..4],GREEN[1..4],HORIZONTAL_SYNC,IEC-L-CLK,IEC-L-DATA,JS1_[1..9],JS2_[1..9],LED[1..4],PS2CLK2,PS2DAT2,RED[1..4],RESET,SW[1..4]
-Wire Bus Line
-	7200 1100 9600 1100
 Text Label 7200 1200 0    10   ~ 0
 AUDIO-,AUDIO+,BLUE[1..4],GREEN[1..4],HORIZONTAL_SYNC,IEC-L-CLK,IEC-L-DATA,JS1_[1..9],JS2_[1..9],LED[1..4],PS2CLK2,PS2DAT2,RED[1..4],RESET,SW[1..4]
 Wire Wire Line
@@ -38,7 +34,6 @@ Wire Wire Line
 	7900 4600 8100 4600
 Connection ~ 8100 4400
 Connection ~ 8200 4400
-Connection ~ 8300 4400
 Text GLabel 7900 4400 0    10   BiDi ~ 0
 GND
 Wire Wire Line
@@ -79,11 +74,11 @@ Text GLabel 8800 3400 2    70   BiDi ~ 0
 BLUE4
 Wire Wire Line
 	8800 3100 9900 3100
-Text GLabel 8800 3100 2    70   BiDi ~ 0
+Text GLabel 9300 1200 3    70   BiDi ~ 0
 IEC-L-RESET
 Wire Wire Line
 	8800 3000 9900 3000
-Text GLabel 8800 3000 2    70   BiDi ~ 0
+Text GLabel 9200 1200 3    70   BiDi ~ 0
 IEC-L-ATN
 Wire Wire Line
 	10700 3600 11200 3600
@@ -101,13 +96,9 @@ Wire Wire Line
 	2000 5100 1400 5100
 Text Label 1400 5100 0    70   ~ 0
 PS2CLK2
-Wire Wire Line
-	8200 1200 8200 2200
-Text GLabel 8200 1200 3    70   BiDi ~ 0
+Text GLabel 9100 1200 3    70   BiDi ~ 0
 IEC-L-CLK
-Wire Wire Line
-	8100 1200 8100 2200
-Text GLabel 8100 1200 3    70   BiDi ~ 0
+Text GLabel 9000 1200 3    70   BiDi ~ 0
 IEC-L-DATA
 Wire Wire Line
 	8800 4200 9900 4200
@@ -116,71 +107,27 @@ RED1
 Wire Wire Line
 	2600 3700 2500 3700
 Wire Wire Line
-	3400 2300 2200 2300
-Wire Wire Line
 	2200 2300 2200 3700
 Wire Wire Line
 	2200 3700 2500 3700
 Text Label 2600 3700 0    10   ~ 0
 SW_LEFT
 Wire Wire Line
-	9200 1200 9200 2200
-Text Label 9200 1200 1    70   ~ 0
-SW_LEFT
-Wire Wire Line
 	3100 3700 3000 3700
-Wire Wire Line
-	3500 2300 3500 2400
-Wire Wire Line
-	3500 2400 2800 2400
-Wire Wire Line
-	2800 2400 2800 3700
 Wire Wire Line
 	2800 3700 3000 3700
 Text Label 3100 3700 0    10   ~ 0
 SW_UP
 Wire Wire Line
-	9300 1200 9300 2200
-Text Label 9300 1200 1    70   ~ 0
-SW_UP
-Wire Wire Line
 	3650 3700 3550 3700
 Wire Wire Line
-	3550 3700 3500 3700
-Wire Wire Line
-	3500 3700 3450 3700
-Wire Wire Line
-	3600 2300 3600 2500
-Wire Wire Line
-	3600 2500 3300 2500
-Wire Wire Line
-	3300 2500 3300 3700
-Wire Wire Line
-	3300 3700 3450 3700
+	3300 2300 3300 3700
 Text Label 3650 3700 0    10   ~ 0
 SW_DOWN
-Wire Wire Line
-	9500 1200 9500 2200
-Text Label 9500 1200 1    70   ~ 0
-SW_DOWN
-Wire Wire Line
-	4750 3700 4650 3700
-Wire Wire Line
-	4650 3700 4600 3700
-Wire Wire Line
-	4600 3700 4550 3700
-Wire Wire Line
-	3800 2300 4400 2300
-Wire Wire Line
-	4400 2300 4400 3700
-Wire Wire Line
-	4400 3700 4550 3700
-Text Label 4750 3700 0    10   ~ 0
-RESET
-Wire Wire Line
-	9400 1200 9400 2200
-Text Label 9400 1200 1    70   ~ 0
-RESET
+Text Label 9500 1100 1    70   ~ 0
+X2
+Text Label 9400 1100 1    70   ~ 0
+X1
 Wire Wire Line
 	14250 5300 14250 5200
 Text Label 14250 5300 0    10   ~ 0
@@ -213,24 +160,12 @@ Wire Wire Line
 	10700 3900 11200 3900
 Text Label 10800 3900 0    70   ~ 0
 LED1
-Wire Wire Line
-	7300 1200 7300 2200
-Text GLabel 7300 1200 3    70   BiDi ~ 0
+Text GLabel 7900 1200 3    70   BiDi ~ 0
 JS1_6
-Wire Wire Line
-	7400 1200 7400 2200
-Text GLabel 7400 1200 3    70   BiDi ~ 0
+Text GLabel 8000 1200 3    70   BiDi ~ 0
 JS1_2
-Wire Wire Line
-	7200 1200 7200 2200
-Text GLabel 7200 1200 3    70   BiDi ~ 0
+Text GLabel 7700 1200 3    70   BiDi ~ 0
 JS1_1
-Wire Wire Line
-	8300 1200 8300 2200
-Text GLabel 8300 1200 3    70   BiDi ~ 0
-SD_CD
-Wire Wire Line
-	8700 1200 8700 2200
 Text Label 8700 1200 1    70   ~ 0
 RX
 Wire Wire Line
@@ -249,41 +184,23 @@ Wire Wire Line
 	8800 2700 9900 2700
 Text GLabel 8800 2700 2    70   BiDi ~ 0
 HORIZONTAL_SYNC
-Wire Wire Line
-	7500 1200 7500 2200
-Text GLabel 7500 1200 3    70   BiDi ~ 0
+Text GLabel 8100 1200 3    70   BiDi ~ 0
 JS1_7
-Wire Wire Line
-	7600 1200 7600 2200
-Text GLabel 7600 1200 3    70   BiDi ~ 0
+Text GLabel 8200 1200 3    70   BiDi ~ 0
 JS1_3
-Wire Wire Line
-	7700 1200 7700 2200
-Text GLabel 7700 1200 3    70   BiDi ~ 0
+Text GLabel 8300 1200 3    70   BiDi ~ 0
 JS1_4
-Wire Wire Line
-	7900 1200 7900 2200
-Text GLabel 7900 1200 3    70   BiDi ~ 0
-JS1_9
-Wire Wire Line
-	8000 1200 8000 2200
-Text GLabel 8000 1200 3    70   BiDi ~ 0
+Text GLabel 8900 1200 3    70   BiDi ~ 0
 JS1_5
 Wire Wire Line
-	8400 1200 8400 2200
-Text GLabel 8400 1200 3    70   BiDi ~ 0
+	7300 1200 7300 2200
+Text GLabel 7300 1200 3    70   BiDi ~ 0
 SD_MISO
-Wire Wire Line
-	8900 1200 8900 2200
-Text GLabel 8900 1200 3    70   BiDi ~ 0
+Text GLabel 7400 1200 3    70   BiDi ~ 0
 SD_MOSI
-Wire Wire Line
-	9000 1200 9000 2200
-Text GLabel 9000 1200 3    70   BiDi ~ 0
+Text GLabel 7500 1200 3    70   BiDi ~ 0
 SD_SCK
-Wire Wire Line
-	9100 1200 9100 2200
-Text GLabel 9100 1200 3    70   BiDi ~ 0
+Text GLabel 7600 1200 3    70   BiDi ~ 0
 SD_~CS
 Wire Wire Line
 	11500 2600 12000 2600
@@ -319,9 +236,9 @@ Wire Wire Line
 Text GLabel 2300 4900 0    10   BiDi ~ 0
 JOY_GND
 Wire Wire Line
-	11700 3500 12000 3500
-Connection ~ 11700 3500
-Text GLabel 11700 3500 0    10   BiDi ~ 0
+	11900 3500 12000 3500
+Connection ~ 11900 3500
+Text GLabel 11900 3500 0    10   BiDi ~ 0
 JOY_GND
 Wire Wire Line
 	10700 2700 11200 2700
@@ -365,24 +282,8 @@ Text Label 12000 3800 0    10   ~ 0
 5V0_PS2
 Wire Wire Line
 	9600 1200 9600 2200
-Text Label 9600 1200 1    70   ~ 0
-SW_RIGHT
-Wire Wire Line
-	4150 3700 4050 3700
-Wire Wire Line
-	4050 3700 4000 3700
-Wire Wire Line
-	4000 3700 3950 3700
-Wire Wire Line
-	3700 2300 3700 2600
-Wire Wire Line
-	3700 2600 3800 2600
-Wire Wire Line
-	3800 2600 3800 3700
-Wire Wire Line
-	3800 3700 3950 3700
-Text Label 4150 3700 0    10   ~ 0
-SW_RIGHT
+Text Label 9600 1100 1    70   ~ 0
+X3
 Wire Wire Line
 	10700 3700 11200 3700
 Text GLabel 10800 3700 2    70   BiDi ~ 0
@@ -395,25 +296,6 @@ Wire Wire Line
 	2500 4700 2400 4700
 Wire Wire Line
 	2500 5100 2400 5100
-Wire Wire Line
-	3400 1700 3500 1700
-Wire Wire Line
-	3500 1700 3600 1700
-Wire Wire Line
-	3600 1700 3700 1700
-Wire Wire Line
-	3700 1700 3800 1700
-Wire Wire Line
-	3800 1700 3600 1700
-Wire Wire Line
-	3600 1700 3600 1600
-Text GLabel 3400 1700 0    10   BiDi ~ 0
-3V3_PWR6
-Wire Wire Line
-	4650 3300 4750 3300
-Connection ~ 4750 3300
-Text GLabel 4650 3300 0    10   BiDi ~ 0
-3V3_PWR6
 Wire Wire Line
 	3550 3300 3650 3300
 Connection ~ 3650 3300
@@ -430,7 +312,7 @@ Connection ~ 2600 3300
 Text GLabel 2500 3300 0    10   BiDi ~ 0
 3V3_PWR6
 Wire Wire Line
-	12000 3700 11600 3700
+	12000 3700 11700 3700
 Entry Wire Line
 	8700 3400 8800 3500
 Entry Wire Line
@@ -574,20 +456,6 @@ F 2 "BPS6001 Classic Computing Shield:0603" H 3650 3900 50  0001 C CNN
 F 3 "" H 3650 3900 50  0001 C CNN
 F 4 "RMCF0603JT47K0" V 3650 3900 50  0001 R TNN "PARTNO"
 	1    3650 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R18
-U 1 1 B828E202
-P 4150 3900
-AR Path="/B828E202" Ref="R18"  Part="1" 
-AR Path="/5D3B6473/B828E202" Ref="R18"  Part="1" 
-F 0 "R18" H 4050 3960 50  0001 L BNN
-F 1 "47K" H 4000 3770 50  0001 L BNN
-F 2 "BPS6001 Classic Computing Shield:0603" H 4150 3900 50  0001 C CNN
-F 3 "" H 4150 3900 50  0001 C CNN
-F 4 "RMCF0603JT47K0" V 4150 3900 50  0001 R TNN "PARTNO"
-	1    4150 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -759,8 +627,8 @@ L BPS6001_Classic_Computing_Shield-eagle-import:EVQQ2 S3
 U 1 1 2CB5445E
 P 2500 3500
 AR Path="/2CB5445E" Ref="S3"  Part="1" 
-AR Path="/5D3B6473/2CB5445E" Ref="S3"  Part="1" 
-F 0 "S3" V 2250 3400 59  0000 L BNN
+AR Path="/5D3B6473/2CB5445E" Ref="S1"  Part="1" 
+F 0 "S1" V 2250 3400 59  0000 L BNN
 F 1 "EVQQ2" V 2350 3625 59  0000 L BNN
 F 2 "BPS6001 Classic Computing Shield:EVQ-Q2" H 2500 3500 50  0001 C CNN
 F 3 "" H 2500 3500 50  0001 C CNN
@@ -773,8 +641,8 @@ L BPS6001_Classic_Computing_Shield-eagle-import:EVQQ2 S1
 U 1 1 CEBFFD5E
 P 3000 3500
 AR Path="/CEBFFD5E" Ref="S1"  Part="1" 
-AR Path="/5D3B6473/CEBFFD5E" Ref="S1"  Part="1" 
-F 0 "S1" V 2750 3400 59  0000 L BNN
+AR Path="/5D3B6473/CEBFFD5E" Ref="S2"  Part="1" 
+F 0 "S2" V 2750 3400 59  0000 L BNN
 F 1 "EVQQ2" V 2850 3625 59  0000 L BNN
 F 2 "BPS6001 Classic Computing Shield:EVQ-Q2" H 3000 3500 50  0001 C CNN
 F 3 "" H 3000 3500 50  0001 C CNN
@@ -787,55 +655,13 @@ L BPS6001_Classic_Computing_Shield-eagle-import:EVQQ2 S4
 U 1 1 66765150
 P 3550 3500
 AR Path="/66765150" Ref="S4"  Part="1" 
-AR Path="/5D3B6473/66765150" Ref="S4"  Part="1" 
-F 0 "S4" V 3300 3400 59  0000 L BNN
+AR Path="/5D3B6473/66765150" Ref="S3"  Part="1" 
+F 0 "S3" V 3300 3400 59  0000 L BNN
 F 1 "EVQQ2" V 3400 3625 59  0000 L BNN
 F 2 "BPS6001 Classic Computing Shield:EVQ-Q2" H 3550 3500 50  0001 C CNN
 F 3 "" H 3550 3500 50  0001 C CNN
 F 4 "PTS525SM10SMTR LFS" V 3550 3500 59  0001 L BNN "PARTNO"
 	1    3550 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:EVQQ2 S5
-U 1 1 2CD42A27
-P 4050 3500
-AR Path="/2CD42A27" Ref="S5"  Part="1" 
-AR Path="/5D3B6473/2CD42A27" Ref="S5"  Part="1" 
-F 0 "S5" V 3800 3400 59  0000 L BNN
-F 1 "EVQQ2" V 3900 3625 59  0000 L BNN
-F 2 "BPS6001 Classic Computing Shield:EVQ-Q2" H 4050 3500 50  0001 C CNN
-F 3 "" H 4050 3500 50  0001 C CNN
-F 4 "PTS525SM10SMTR LFS" V 4050 3500 59  0001 L BNN "PARTNO"
-	1    4050 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:R0603 R11
-U 1 1 6E0BDDF8
-P 4750 3900
-AR Path="/6E0BDDF8" Ref="R11"  Part="1" 
-AR Path="/5D3B6473/6E0BDDF8" Ref="R11"  Part="1" 
-F 0 "R11" H 4650 3960 50  0001 L BNN
-F 1 "47K" H 4600 3770 50  0001 L BNN
-F 2 "BPS6001 Classic Computing Shield:0603" H 4750 3900 50  0001 C CNN
-F 3 "" H 4750 3900 50  0001 C CNN
-F 4 "RMCF0603JT47K0" V 4750 3900 50  0001 R TNN "PARTNO"
-	1    4750 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:EVQQ2 S2
-U 1 1 F82F9BF5
-P 4650 3500
-AR Path="/F82F9BF5" Ref="S2"  Part="1" 
-AR Path="/5D3B6473/F82F9BF5" Ref="S2"  Part="1" 
-F 0 "S2" V 4400 3400 59  0000 L BNN
-F 1 "EVQQ2" V 4500 3625 59  0000 L BNN
-F 2 "BPS6001 Classic Computing Shield:EVQ-Q2" H 4650 3500 50  0001 C CNN
-F 3 "" H 4650 3500 50  0001 C CNN
-F 4 "PTS525SM10SMTR LFS" V 4650 3500 59  0001 L BNN "PARTNO"
-	1    4650 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -875,32 +701,6 @@ F 1 "GND" H 3560 4120 59  0000 L BNN
 F 2 "" H 3650 4200 50  0001 C CNN
 F 3 "" H 3650 4200 50  0001 C CNN
 	1    3650 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:GND #GND10
-U 1 1 845C69E3
-P 4150 4200
-AR Path="/845C69E3" Ref="#GND10"  Part="1" 
-AR Path="/5D3B6473/845C69E3" Ref="#GND010"  Part="1" 
-F 0 "#GND010" H 4150 4200 50  0001 C CNN
-F 1 "GND" H 4060 4120 59  0000 L BNN
-F 2 "" H 4150 4200 50  0001 C CNN
-F 3 "" H 4150 4200 50  0001 C CNN
-	1    4150 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:GND #GND11
-U 1 1 19DA8D48
-P 4750 4200
-AR Path="/19DA8D48" Ref="#GND11"  Part="1" 
-AR Path="/5D3B6473/19DA8D48" Ref="#GND011"  Part="1" 
-F 0 "#GND011" H 4750 4200 50  0001 C CNN
-F 1 "GND" H 4660 4120 59  0000 L BNN
-F 2 "" H 4750 4200 50  0001 C CNN
-F 3 "" H 4750 4200 50  0001 C CNN
-	1    4750 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1052,27 +852,27 @@ $EndComp
 $Comp
 L BPS6001_Classic_Computing_Shield-eagle-import:GND #GND23
 U 1 1 C7080FD3
-P 11700 3400
+P 11900 3400
 AR Path="/C7080FD3" Ref="#GND23"  Part="1" 
 AR Path="/5D3B6473/C7080FD3" Ref="#GND023"  Part="1" 
-F 0 "#GND023" H 11700 3400 50  0001 C CNN
-F 1 "GND" H 11610 3320 59  0000 L BNN
-F 2 "" H 11700 3400 50  0001 C CNN
-F 3 "" H 11700 3400 50  0001 C CNN
-	1    11700 3400
+F 0 "#GND023" H 11900 3400 50  0001 C CNN
+F 1 "GND" H 11810 3320 59  0000 L BNN
+F 2 "" H 11900 3400 50  0001 C CNN
+F 3 "" H 11900 3400 50  0001 C CNN
+	1    11900 3400
 	-1   0    0    1   
 $EndComp
 $Comp
 L BPS6001_Classic_Computing_Shield-eagle-import:GND #GND24
 U 1 1 664B2FAE
-P 11700 3400
+P 11900 3400
 AR Path="/664B2FAE" Ref="#GND24"  Part="1" 
 AR Path="/5D3B6473/664B2FAE" Ref="#GND024"  Part="1" 
-F 0 "#GND024" H 11700 3400 50  0001 C CNN
-F 1 "GND" H 11610 3320 59  0000 L BNN
-F 2 "" H 11700 3400 50  0001 C CNN
-F 3 "" H 11700 3400 50  0001 C CNN
-	1    11700 3400
+F 0 "#GND024" H 11900 3400 50  0001 C CNN
+F 1 "GND" H 11810 3320 59  0000 L BNN
+F 2 "" H 11900 3400 50  0001 C CNN
+F 3 "" H 11900 3400 50  0001 C CNN
+	1    11900 3400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1104,30 +904,16 @@ F 4 "RMCF0603JT390R" H 2200 5100 50  0001 L BNN "PARTNO"
 	1    0    0    -1  
 $EndComp
 $Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:JP5Q CFG1
-U 1 1 98CABBD4
-P 3600 2000
-AR Path="/98CABBD4" Ref="CFG1"  Part="1" 
-AR Path="/5D3B6473/98CABBD4" Ref="CFG1"  Part="1" 
-F 0 "CFG1" V 3300 1800 59  0000 L BNN
-F 1 "JP5Q" V 3975 1800 59  0000 L BNN
-F 2 "BPS6001 Classic Computing Shield:JP5Q" H 3600 2000 50  0001 C CNN
-F 3 "" H 3600 2000 50  0001 C CNN
-F 4 "M20-9720545" V 3600 2000 59  0001 L BNN "PARTNO"
-	1    3600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR7
 U 1 1 93F141AD
-P 3600 1500
+P 2900 1500
 AR Path="/93F141AD" Ref="#3V3_PWR7"  Part="1" 
 AR Path="/5D3B6473/93F141AD" Ref="#3V3_PWR07"  Part="1" 
-F 0 "#3V3_PWR07" H 3600 1500 50  0001 C CNN
-F 1 "3V3" H 3530 1625 46  0000 L BNN
-F 2 "" H 3600 1500 50  0001 C CNN
-F 3 "" H 3600 1500 50  0001 C CNN
-	1    3600 1500
+F 0 "#3V3_PWR07" H 2900 1500 50  0001 C CNN
+F 1 "3V3" H 2830 1625 46  0000 L BNN
+F 2 "" H 2900 1500 50  0001 C CNN
+F 3 "" H 2900 1500 50  0001 C CNN
+	1    2900 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1142,32 +928,6 @@ F 2 "BPS6001 Classic Computing Shield:MINI-DIN6" H 2700 4900 50  0001 C CNN
 F 3 "" H 2700 4900 50  0001 C CNN
 	1    2700 4900
 	-1   0    0    1   
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR5
-U 1 1 9679DA66
-P 4750 3200
-AR Path="/9679DA66" Ref="#3V3_PWR5"  Part="1" 
-AR Path="/5D3B6473/9679DA66" Ref="#3V3_PWR05"  Part="1" 
-F 0 "#3V3_PWR05" H 4750 3200 50  0001 C CNN
-F 1 "3V3" H 4680 3325 46  0000 L BNN
-F 2 "" H 4750 3200 50  0001 C CNN
-F 3 "" H 4750 3200 50  0001 C CNN
-	1    4750 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR1
-U 1 1 BE0FDCBF
-P 4150 3200
-AR Path="/BE0FDCBF" Ref="#3V3_PWR1"  Part="1" 
-AR Path="/5D3B6473/BE0FDCBF" Ref="#3V3_PWR01"  Part="1" 
-F 0 "#3V3_PWR01" H 4150 3200 50  0001 C CNN
-F 1 "3V3" H 4080 3325 46  0000 L BNN
-F 2 "" H 4150 3200 50  0001 C CNN
-F 3 "" H 4150 3200 50  0001 C CNN
-	1    4150 3200
-	1    0    0    -1  
 $EndComp
 $Comp
 L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR2
@@ -1211,14 +971,14 @@ $EndComp
 $Comp
 L BPS6001_Classic_Computing_Shield-eagle-import:3V3 #3V3_PWR12
 U 1 1 57D80C6C
-P 11600 3600
+P 11700 3600
 AR Path="/57D80C6C" Ref="#3V3_PWR12"  Part="1" 
 AR Path="/5D3B6473/57D80C6C" Ref="#3V3_PWR012"  Part="1" 
-F 0 "#3V3_PWR012" H 11600 3600 50  0001 C CNN
-F 1 "3V3" H 11530 3725 46  0000 L BNN
-F 2 "" H 11600 3600 50  0001 C CNN
-F 3 "" H 11600 3600 50  0001 C CNN
-	1    11600 3600
+F 0 "#3V3_PWR012" H 11700 3600 50  0001 C CNN
+F 1 "3V3" H 11630 3725 46  0000 L BNN
+F 2 "" H 11700 3600 50  0001 C CNN
+F 3 "" H 11700 3600 50  0001 C CNN
+	1    11700 3600
 	-1   0    0    -1  
 $EndComp
 Text Notes 4700 8000 0    73   ~ 0
@@ -1233,4 +993,96 @@ Text GLabel 7400 4400 0    10   BiDi ~ 0
 5V
 Text GLabel 7500 4400 0    10   BiDi ~ 0
 5V
+Wire Wire Line
+	3300 3700 3550 3700
+Wire Wire Line
+	7200 1600 7200 2200
+Text GLabel 8400 1200 3    70   BiDi ~ 0
+JS1_9
+Text GLabel 7200 1200 3    70   BiDi ~ 0
+SD_CD
+Wire Wire Line
+	7400 2200 7400 1200
+Wire Wire Line
+	7500 2200 7500 1200
+Wire Wire Line
+	7600 2200 7600 1200
+Wire Wire Line
+	7700 2200 7700 1200
+Wire Wire Line
+	7900 2200 7900 1200
+Wire Wire Line
+	8000 2200 8000 1200
+Wire Wire Line
+	8100 2200 8100 1200
+Wire Wire Line
+	8200 2200 8200 1200
+Wire Wire Line
+	8300 2200 8300 1200
+Wire Wire Line
+	8400 2200 8400 1200
+Wire Wire Line
+	8700 1200 8700 2200
+Wire Wire Line
+	8900 1200 8900 2200
+Wire Wire Line
+	9000 2200 9000 1200
+Wire Wire Line
+	9100 1200 9100 2200
+Wire Wire Line
+	9200 1200 9200 2200
+Wire Wire Line
+	9300 1200 9300 2200
+Wire Wire Line
+	9400 1200 9400 2200
+Wire Wire Line
+	9500 1200 9500 2200
+Text GLabel 9500 1200 3    50   Input ~ 0
+D20
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5D7933E3
+P 2800 2000
+F 0 "J1" V 2896 1812 50  0000 R CNN
+F 1 "Conn_02x03_Row_Letter_Last" V 2805 1812 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 2800 2000 50  0001 C CNN
+F 3 "~" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 2300 2700 2300
+Wire Wire Line
+	2700 2300 2700 2200
+Wire Wire Line
+	3300 2300 2900 2300
+Wire Wire Line
+	2900 2300 2900 2200
+Wire Wire Line
+	2700 1700 2800 1700
+Connection ~ 2800 1700
+Wire Wire Line
+	2800 1700 2900 1700
+Wire Wire Line
+	2800 1700 2900 1600
+Text GLabel 2200 2400 3    50   Input ~ 0
+SW_FUNCTION
+Text GLabel 2800 2400 3    50   Input ~ 0
+SW_SELECT
+Text GLabel 3300 2400 3    50   Input ~ 0
+SW_RESET
+Wire Wire Line
+	2800 2200 2800 3700
+Wire Bus Line
+	8700 2700 8700 4200
+Wire Bus Line
+	7200 1100 9600 1100
+Text GLabel 8800 3100 2    50   Input ~ 0
+SW_RESET
+Text GLabel 8800 3000 2    50   Input ~ 0
+SW_SELECT
+Text GLabel 9400 1200 3    50   Input ~ 0
+IEC-L-SRQ
+Text GLabel 9600 1200 3    50   Input ~ 0
+d21
 $EndSCHEMATC

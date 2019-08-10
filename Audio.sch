@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12505 8268
 encoding utf-8
-Sheet 1 8
+Sheet 5 8
 Title ""
 Date ""
 Rev ""
@@ -17,17 +17,9 @@ $EndDescr
 Wire Wire Line
 	7200 2800 7200 2500
 Wire Wire Line
-	7200 2500 7200 1700
-Wire Wire Line
-	7200 1700 7200 1550
-Wire Wire Line
 	7200 1550 7600 1550
 Wire Wire Line
 	9100 2800 9100 2500
-Wire Wire Line
-	9100 2500 9100 2000
-Wire Wire Line
-	9100 2000 9100 1950
 Wire Wire Line
 	9100 1950 8400 1950
 Wire Wire Line
@@ -202,4 +194,8 @@ F 3 "" H 8400 2540 50  0001 C CNN
 	1    8400 2540
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7200 1550 7200 2500
+Wire Wire Line
+	9100 1950 9100 2500
 $EndSCHEMATC
